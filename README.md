@@ -2,7 +2,13 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-First, run the development server:
+Tasks are stored by the [todo-backend](../todo-backend) API, so start it first:
+
+```bash
+cd ../todo-backend && npm install && npm run dev   # http://localhost:4000
+```
+
+Then run the dashboard:
 
 ```bash
 npm run dev
@@ -15,6 +21,10 @@ bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+Set `NEXT_PUBLIC_API_URL` in `.env.local` to point at a different API host; it
+defaults to `http://localhost:4000`. If the API is unreachable, the board shows
+an error with a Retry button instead of failing silently.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
