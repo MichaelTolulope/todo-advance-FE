@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-// import Script from 'next/script'
+import Script from 'next/script'
 
 const geistSans = Geist({
   variable: "--font-sans",
@@ -35,7 +35,7 @@ export default function RootLayout({
           groom-server="aHR0cHM6Ly90b2RvLWFkdmFuY2UtYmUudmVyY2VsLmFwcA=="
           strategy="lazyOnload"
         /> */}
-        <script src="https://sdk.usegroom.com/index.global.js" groom-sdk-key="ws_sdk_6ab66b59da85e3f1" groom-server="aHR0cHM6Ly90b2RvLWFkdmFuY2UtYmUudmVyY2VsLmFwcA==" defer></script>
+        <Script src="https://sdk.usegroom.com/index.global.js" groom-sdk-key="ws_sdk_6ab66b59da85e3f1" groom-server="aHR0cHM6Ly90b2RvLWFkdmFuY2UtYmUudmVyY2VsLmFwcA==" defer/>
       </body>
     </html>
   );
